@@ -1,6 +1,5 @@
 import db from './db';
-import fs from 'fs';
-import path from 'path';
+
 
 export function createBlogPostsTable() {
   try {
