@@ -38,7 +38,7 @@ export interface ButtonProps
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild, ...props }, ref) => {
+  ({ className, variant, size, ...props }, ref) => {
     // If asChild is true, you might want to use a different rendering logic
     // For now, we'll just use a standard button
     return (
