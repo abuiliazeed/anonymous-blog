@@ -1,4 +1,6 @@
 import db from './db';
+import fs from 'fs';
+import path from 'path';
 
 export function createBlogPostsTable() {
   try {
@@ -20,5 +22,5 @@ export function createBlogPostsTable() {
   }
 }
 
-// Run migration on import
+// Ensure migrations run on every deployment
 createBlogPostsTable();
